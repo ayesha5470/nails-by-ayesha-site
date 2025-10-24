@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nails by Ayesha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Nails by Ayesha</div>
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Beautiful Nails, Beautiful You</h1>
+        <p>Elevate your style with exquisite nail art</p>
+        <a href="#contact" class="btn">Book an Appointment</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Nails by Ayesha is a professional nail studio offering bespoke nail designs and high-quality manicure & pedicure services. Our certified nail technician and trainer brings creativity and precision to every set, ensuring you walk out with nails that reflect your unique style.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Manicure</h3>
+                <p>Classic and gel manicures to keep your hands looking elegant and clean.</p>
+            </div>
+            <div class="service-card">
+                <h3>Pedicure</h3>
+                <p>Relaxing pedicures with exfoliation, massage, and polish of your choice.</p>
+            </div>
+            <div class="service-card">
+                <h3>Nail Art</h3>
+                <p>Custom nail designs using premium products. Bring your ideas or get inspired by our gallery!</p>
+            </div>
+            <div class="service-card">
+                <h3>Press-On Kits</h3>
+                <p>Handmade press-on nail kits that are reusable and removable for convenient style changes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://via.placeholder.com/300x300?text=Design+1" alt="Nail Design 1" onclick="openLightbox(this.src)">
+            <img src="https://via.placeholder.com/300x300?text=Design+2" alt="Nail Design 2" onclick="openLightbox(this.src)">
+            <img src="https://via.placeholder.com/300x300?text=Design+3" alt="Nail Design 3" onclick="openLightbox(this.src)">
+            <img src="https://via.placeholder.com/300x300?text=Design+4" alt="Nail Design 4" onclick="openLightbox(this.src)">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact & Booking</h2>
+        <p>Ready to book your appointment or have questions? Get in touch!</p>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Lightbox for gallery images -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-image" src="" alt="Large view">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Nails by Ayesha. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
